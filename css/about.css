@@ -1,0 +1,303 @@
+/*-----------------------------------------------
+               Palette
+
+
+
+-----------------------------------------------*/
+
+
+/*-----------------------------------------------
+               General-Style
+-----------------------------------------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E4DFDA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.wrapper {
+    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.wrapper__container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    width: 786px;
+}
+
+/*-----------------------------------------------
+               About-tab content - icon
+-----------------------------------------------*/
+
+.fas, .far {
+    padding: 6px;
+}
+
+.text__icon--style {
+    margin: auto 10px;
+}
+
+.tab-content__section__text--icon {
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(77, 93, 184);
+    margin-bottom: 20px;
+}
+
+.text__icon__icon {
+    color: #587B7F;
+    font-size: 30px;
+    transition: 0.2s linear;
+    line-height: 30px;
+}
+
+.text__icon__icon:hover {
+    transform: scale(1.3);
+}
+
+/*-----------------------------------------------
+     About-tab content - information - Hello Isis
+-----------------------------------------------*/
+
+.tab-content__section__text--head {
+    margin: 10px 0;
+    color: #553739;
+}
+
+.tab-content__section__text--subhead {
+    color: #BB6B6B;
+    font-style: italic;
+    margin: 0;
+}
+
+.tab-content__section__text--paragraph {
+    color: #587B7F;
+    font-size: 14px;
+    padding-right: 20px;
+    text-align: justify
+}
+
+/*-----------------------------------------------
+               About tab - Image section
+-----------------------------------------------*/
+
+.img-size {
+    height: 200px;
+    width: 200px;
+    border-radius: 70%;
+    border: 4px solid #BB6B6B;
+}
+
+.tab-content__section__text__image--tittle {
+    margin-bottom: 0;
+}
+
+/*-----------------------------------------------
+               About-tab
+-----------------------------------------------*/
+
+.tab-content {
+    background-color: #F1FAEE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 4px solid #587B7F;
+}
+
+.tab-content__section {
+    border-right: 2px solid #587B7F;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+    width: max-content;
+    color: #553739;
+}
+
+.tab-content__section--text {
+    margin: 0 auto;
+    padding: 20px 20px 10px 40px;
+    width: inherit;
+}
+
+input[type=radio], .tab-content {
+    display: none;
+}
+
+input[type=radio]:checked + label + .tab-content {
+    display: flex;
+}
+
+label {
+    background-color: #F2D1C9;
+    color: white;
+    height: 10%;
+    text-align: center;
+    width: 20%;
+}
+
+label:hover {
+    background-color: #BB6B6B;
+    color: white;
+}
+
+label, input {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label:first-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+label:last-of-type {
+    border-bottom-right-radius: 10px;
+}
+
+.border__label {
+    border-left: 1px;
+    border-right: 1px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-right-color: white;
+    border-left-color: white;
+}
+
+/*-----------------------------------------------
+               Resume-tab-content
+-----------------------------------------------*/
+
+.tab-content__resume--bar {
+    background-color: #BB6B6B;
+    width: 200px;
+    height: 10px;
+    margin: 0;
+    border-bottom: 2px solid lightblue;
+}
+
+.tab-content__resume__bar--tittles {
+    margin-bottom: 10px;
+}
+
+.tab-content__resume__--tittles {
+    margin: 0;
+}
+
+.tab-content__resume--skills {
+    color: #587B7F;
+    margin: 20px;
+    width: 30%;
+    border-right: 2px solid #BB6B6B;
+}
+
+.tab-content__resume--work {
+    color: #587B7F;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    padding-left: 20px;
+}
+
+.tab-content__resume__table--fix {
+    display: flex;
+    align-items: start;
+}
+
+th, td {
+    width: 240px;
+    text-align: left;
+}
+
+/*-----------------------------------------------
+               Recommendation-tab-content
+-----------------------------------------------*/
+
+.tab-content__recom {
+    align-items: center;
+}
+
+.tab-content__recom--boxes {
+    height: 130px;
+    width: 250px;
+    padding: 10px;
+    background-color: #BB6B6B;
+    color: white;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.tab-content__recom__center--box {
+    margin: 0;
+}
+
+.tab-content__recom--author {
+    font-style: italic;
+    color: lightblue;
+    font-size: 14px;
+}
+
+/*-----------------------------------------------
+               Portfolio-tab-content
+-----------------------------------------------*/
+
+.portfolio__photo--align {
+    justify-content: center;
+}
+
+.tab-content__portfolio {
+    width: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tab-content__portfolio--photo {
+    width: auto;
+    height: 160px;
+    border-radius: 10px;
+    transition: 0.2s linear;
+    margin: 0 18px;
+    border-bottom: 2px solid #F2D1C9;
+}
+
+.tab-content__portfolio--photo:hover {
+    transform: scale(1.5);
+}
+
+/*-----------------------------------------------
+               Contact-tab-content
+-----------------------------------------------*/
+
+.tab-content__contact--form {
+    width: 30%;
+    margin: 20px;
+    color: #587B7F;
+}
+
+.tab-content__contact__form--tittle {
+    margin-top: 0;
+}
+
+.tab-content__contact--map {
+    width: 70%;
+    padding-left: 20px;
+}

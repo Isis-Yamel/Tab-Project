@@ -1,0 +1,41 @@
+
+                    <input type="radio" name="tabs" id="tab-recommendation">
+                    <label for="tab-recommendation">Recommendation</label>
+                    <div class="tab-content">
+                        <p>Lorem, ipsum dolor
+                        </p>
+                    </div>
+
+                    <input type="radio" name="tabs" id="tab-portfolio">
+                    <label for="tab-portfolio">Portfolio</label>
+                    <div class="tab-content">
+                        <p>Lorem, ipsum
+                        </p>
+                    </div>
+
+                    <input type="radio" name="tabs" id="tab-contact">
+                    <label for="tab-contact">Contact</label>
+                    <div class="tab-content">
+                        <p>Lorem
+                        </p>
+                    </div>
+
+
+
+/*-----------------------------------------------
+               Button
+-----------------------------------------------*/
+
+.btn {
+    color: #b92b27;
+    size: 20px;
+}
+
+/*-----------------------------------------------
+               Size-Images
+-----------------------------------------------*/
+
+.normal-size {
+    height: auto;
+    width: 20%;
+}
