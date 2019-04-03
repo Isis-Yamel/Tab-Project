@@ -157,7 +157,7 @@ label:hover {
     color: white;
 }
 
-label, input {
+label {
     order: 1;
     display: flex;
     align-items: center;
@@ -300,4 +300,42 @@ th, td {
 .tab-content__contact--map {
     width: 70%;
     padding-left: 20px;
+}
+
+.tab-content__contact__form--input {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.form__input--data {
+    width: 48%;
+    height: 30px;
+}
+
+.form__btn {
+    position: relative;
+    left: 52%;
+}
+
+.form__input--text {
+    margin: 4px 0;
+}
+
+.form__input {
+    border: none;
+    background-color: rgb(241, 235, 235);
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+}
+
+.form__input::placeholder {
+    color: grey;
+    font-style: italic;
+    padding: 0 10px;
+}
+
+.tab-content__contact__form--info {
+    font-size: 12px;
+    color: #BB6B6B;
 }
