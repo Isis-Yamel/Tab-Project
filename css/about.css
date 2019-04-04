@@ -1,15 +1,18 @@
 /*-----------------------------------------------
                Palette
 
-
+    Dark red : #BB6B6B
+    Purple   : #553739
+    Blue     : #587B7F
+    Pink     : #F2D1C9
+    Back-G   : #F1FAEE
+    Back-G-P : #E4DFDA
 
 -----------------------------------------------*/
-
 
 /*-----------------------------------------------
                General-Style
 -----------------------------------------------*/
-
 
 * {
     box-sizing: border-box;
@@ -20,6 +23,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin: 0;
+}
+
+.header__style {
+    color: #553739;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .wrapper {
@@ -63,7 +72,7 @@ body {
 }
 
 .tab-content__section__text--icon {
-    color: rgb(77, 93, 184);
+    color: #587B7F;
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 20px;
@@ -72,7 +81,6 @@ body {
 .text__icon__icon {
     color: #587B7F;
     font-size: 30px;
-    line-height: 30px;
     transition: 0.2s linear;
 }
 
@@ -123,14 +131,12 @@ body {
 .tab-content__section {
     border-right: 2px solid #587B7F;
     color: #553739;
-    padding: 24px 24px 24px 0;
+    padding: 24px;
     text-align: center;
-    width: max-content;
 }
 
 .tab-content__section--text {
     margin-left: 30px;
-    width: inherit;
 }
 
 input[type=radio], .tab-content {
@@ -295,6 +301,7 @@ th, td {
 }
 
 .tab-content__contact__form--tittle {
+    margin-bottom: 10px;
     margin-top: 0;
 }
 
@@ -344,4 +351,15 @@ th, td {
 .tab-content__contact__form--info {
     color: #BB6B6B;
     font-size: 12px;
+}
+
+/*-----------------------------------------------
+               Footer
+-----------------------------------------------*/
+
+.footer__style {
+    color: #553739;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
